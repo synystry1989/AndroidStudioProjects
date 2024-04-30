@@ -19,17 +19,36 @@ import com.example.olaappsobrenome.databinding.ActivityMainBinding
                 var nome: String = binding.editNome.text.toString()
                 var snome: String = binding.editSobrenome.text.toString()
 
-                if (nome == "" || snome =="") {
+                /*  if (nome == "" || snome =="") {
                     Toast.makeText(applicationContext, "DADOS INVALIDOS", Toast.LENGTH_SHORT ).show()
                 }
                 else {
 
                     binding.textResultadp.text = "ola " + nome + " " + snome + "!"
                 }
+                */
+                if(nome.isEmpty() && snome.isEmpty())
+                {
+                    Toast.makeText(applicationContext, "nao inseriu dados", Toast.LENGTH_SHORT ).show()
+                }
+                if(nome.isEmpty())
+                {
+                    Toast.makeText(applicationContext, "nome nao inserido", Toast.LENGTH_SHORT ).show()
+                }
+                else if(snome.isEmpty())
+                {
+                    Toast.makeText(applicationContext, "sobrenome nao inserido", Toast.LENGTH_SHORT ).show()
+                }
+                else{{
+                    binding.textResultadp.text = "ola " + nome + " " + snome + "!"
+                }}
 
 
-                //"ola ${ nome} ${snome}", Toast.LENGTH_SHORT ).show()
             }
+
+
+
+
 
 
         }
