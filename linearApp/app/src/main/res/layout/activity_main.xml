@@ -7,14 +7,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-<TextView
-
+<EditText
+    android:id = "@+id/edit_valor_euros"
+    android:hint="valor em euros"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
 
-    android:text="isto e um teste"
-    ></TextView>
+    ></EditText>
+
+    <Button
+        android:id="@+id/button_converter"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Converter" />
+
+    <TextView
+        android:id ="@+id/text_valor_dolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:hint="resultado"
+        android:textSize="18sp"
+        ></TextView>
 
 
 </LinearLayout>
