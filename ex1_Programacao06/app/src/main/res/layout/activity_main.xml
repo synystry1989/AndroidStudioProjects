@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="nome:"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editText_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insira nome"
+            android:inputType="text"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView_morada"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="morada:"
+        android:gravity="center"
+
+
+        />
+
+        <EditText
+            android:id="@+id/editText_morada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insira morada"
+            android:inputType="text"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="genero:" />
+
+        <EditText
+            android:id="@+id/editText_genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insira genero"
+            android:inputType="text"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+        />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" telefone:"
+        android:layout_marginTop="10dp"
+
+ />
+
+    <EditText
+        android:id="@+id/editText_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="insira telefone"
+        android:inputType="text"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="14dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insira email:"
+        android:layout_marginTop="10dp"
+      />
+
+
+    <Button
+        android:id="@+id/button_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informacoes Pessoais"
+        android:layout_marginTop="200dp"/>
+
+
+</LinearLayout>
+
+
